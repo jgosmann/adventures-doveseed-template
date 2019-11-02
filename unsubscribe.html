@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta http-equiv="x-dns-prefetch-control" content="off">
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>{{ subject | e }}</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="://{{ host }}/favicon.ico">
+        <style type="text/css">{% include 'files/style.css' %}</style>
+    </head>
+    <body>
+        <main>
+            <p class="large"><img id="logo" src="data:image/png;base64,{{ include_binary("files/logo.png") | b64encode }}"/>&nbsp;Hi there,</p>
+            <p>please click the button to unsubscribe from <a href="https://{{ host }}">{{ display_name }}</a>.</p>
+            <p><a href="{{ confirm_link }}" class="btn" rel="nofollow">Confirm unsubscribing.</a></p>
+            <p>If you did not unsubscribe, you can ignore this email.</p>
+            <p>Thank you!</p>
+        </main>
+    </body>
+</html>

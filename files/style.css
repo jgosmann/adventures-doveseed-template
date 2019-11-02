@@ -1,0 +1,57 @@
+@font-face {
+    font-family: 'Lato Light';
+    src: url('fonts/LatoLatin-LightItalic.woff2') format('woff2'),
+         url('fonts/LatoLatin-LightItalic.woff') format('woff');
+    font-style: italic;
+}
+
+body {
+    font-family: "Lato Light";
+    font-size: 16px;
+}
+
+a {
+    color: #336cc6;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #dd16c9;
+}
+
+p {
+    width: 600px;
+    max-width: calc(100% - 32px);
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 16px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+}
+
+.large {
+    font-size: 1.5em;
+}
+
+.btn {
+    border: 1px solid #ccc;
+    padding: 8px;
+}
+
+a.btn {
+    transition: 0.2s;
+    display: inline-block;
+    color: #000;
+}
+
+a:hover.btn {
+    color: #fff;
+    background-color: #336cc6;
+}
+
+#logo {
+    width: 24px;
+    height: 24px;
+    display: inline-block;
+    vertical-align: baseline;
+}
