@@ -29,7 +29,7 @@
                 <p>{{ post.description }}</h1>
                 <p><a href="{{ post.link }}" class="btn">Read it now</a></p>
             {% endif %}
-            <p class="small"><a href="https://{{ host }}/unsubscribe?email={{ to_email }}">Unsubscribe from these notifications.</a></p>
+            <p class="small"><a href="https://{{ host }}/unsubscribe?email={{ to_email | urlquote }}">Unsubscribe from these notifications.</a></p>
         </div>
     </body>
 </html>
