@@ -7,3 +7,8 @@ Hi there,
 {{ post.description }}
 
 Read it here: {{ post.link }}
+
+
+To unsubscribe from this notification click this link:
+
+https://{{ host }}/unsubscribe?email={{ to_email }}

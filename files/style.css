@@ -43,6 +43,10 @@ h1 {
     font-size: 1.5em;
 }
 
+.small {
+    font-size 0.75em;
+}
+
 a.btn {
     background-color: rgb(51, 108, 198);
     background: linear-gradient(180deg, rgb(51, 108, 198) 60%, rgb(31, 59, 105) 100%);
