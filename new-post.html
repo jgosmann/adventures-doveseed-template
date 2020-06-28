@@ -26,7 +26,7 @@
                     </div>
                 </div>
             {% else %}
-                <p>{{ post.description }}</h1>
+                <p>{{ post.description }}</p>
                 <p><a href="{{ post.link }}" class="btn">Read it now</a></p>
             {% endif %}
             <p class="small"><a href="https://{{ host }}/unsubscribe/?email={{ to_email | urlquote }}">Unsubscribe from these notifications.</a></p>
