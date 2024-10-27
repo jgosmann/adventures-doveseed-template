@@ -1,0 +1,54 @@
+<mjml>
+    <mj-head>
+        <mj-title>{{ subject | e }}</mj-title>
+        <mj-font href="https://adventures.jgosmann.de/mailfont.css" name="Lato" />
+        <mj-style>
+a {
+    color: #336cc6;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #dd16c9;
+}
+
+.btn a {
+    box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.5);
+}
+        </mj-style>
+        <mj-attributes>
+            <mj-all font-size="16px" font-family="Lato, Helvetica, Arial, sans-serif"/>
+        </mj-attributes>
+    </mj-head>
+    <mj-body>
+        <mj-section>
+            <mj-column>
+                <mj-text font-size="24px">
+                    <img width="24px" height="24px" align="baseline" src="data:image/png;base64,{{ include_binary("files/logo.png") | b64encode }}"/>&nbsp;Hi there,
+                </mj-text>
+            </mj-column>
+        </mj-section>
+        <mj-section padding="0px">
+            <mj-column>
+                <mj-text padding="0px 25px">
+                    please confirm your subscription to <a href="https://{{ host }}">{{ display_name }}</a> by clicking the button.
+                </mj-text>
+            </mj-column>
+        </mj-section>
+        <mj-section>
+            <mj-column>
+                <mj-button href="{{ confirm_link }}" css-class="btn" rel="nofollow" background-color="#336cc6" border-radius="4px" font-weight="bold" align="left">
+                    Confirm your subscription.
+                </mj-button>
+            </mj-column>
+        </mj-section>
+        <mj-section>
+            <mj-column>
+                <mj-text padding="0px 25px">
+                    <p>If you did not subscribe, you can ignore this email.</p>
+                    <p>Thank you!</p>
+                </mj-text>
+            </mj-column>
+        </mj-section>
+    </mj-body>
+</mjml>
