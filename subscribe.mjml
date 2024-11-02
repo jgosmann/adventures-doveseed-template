@@ -24,7 +24,7 @@ a:hover {
         <mj-section>
             <mj-column>
                 <mj-text font-size="24px">
-                    <img width="24px" height="24px" align="baseline" src="data:image/png;base64,{{ include_binary("files/logo.png") | b64encode }}"/>&nbsp;Hi there,
+                    <img width="24px" height="24px" align="baseline" src="cid:{{ include_related("files/logo.png").content_id }}"/>&nbsp;Hi there,
                 </mj-text>
             </mj-column>
         </mj-section>
